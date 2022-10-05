@@ -30,3 +30,6 @@ CREATE TABLE testes_nulos(
 );
 
 insert into testes_nulos(id, item, quantidade) values (null, 'Pendrive', 5), (2, 'Monitor', 7), (3, 'Teclado', null);
+insert into tbl_autores(ID_Autor, Nome_autor, Sobrenome_Autor) values (1, 'Fabiano', 'Souza');
+
+select concat(Nome_Autor, '', Sobrenome_Autor) as 'NomeCompleto' from tbl_autores;
