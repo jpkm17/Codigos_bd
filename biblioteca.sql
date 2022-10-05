@@ -28,3 +28,5 @@ CREATE TABLE testes_nulos(
   id SMALLINT PRIMARY KEY AUTO_INCREMENT, 
   item varchar(20), quantidade SMALLINT null 
 );
+
+insert into testes_nulos(id, item, quantidade) values (null, 'Pendrive', 5), (2, 'Monitor', 7), (3, 'Teclado', null);
