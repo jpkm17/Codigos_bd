@@ -12,7 +12,19 @@ CREATE table if not EXISTS tbl_autores(
     Nome_Autor varchar(50) not null,
     Sobrenome_Autor varchar(60) not null
 );
+
 create table tbl_categoria(
     ID_Categoria smallint(6) PRIMARY KEY AUTO_INCREMENT,
     categoria varchar(30) not null
+);
+
+
+create TABLE tbl_editoras( 
+  ID_Editores SMALLINT PRIMARY KEY AUTO_INCREMENT, 
+  Nome_editora varchar(50) NOT null 
+);
+
+CREATE TABLE testes_nulos( 
+  id SMALLINT PRIMARY KEY AUTO_INCREMENT, 
+  item varchar(20), quantidade SMALLINT null 
 );
